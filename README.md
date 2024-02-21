@@ -29,3 +29,5 @@ docker compose -p inkoms-posgresql up -d
 After type and run the command go to `localhost:${PG_ADMIN_PORT}`
 
 [inkoms-vagrant-local]: https://github.com/inkoms/inkoms-vagrant-local
+
+//This is a dummy commit, bye
