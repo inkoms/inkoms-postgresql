@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   inkoms-postgresql-db:
@@ -20,7 +20,7 @@ services:
   inkoms-postgresql-pgadmin:
     container_name: inkoms-postgresql-pgadmin
     restart: always
-    image: dpage/pgadmin4:8.0
+    image: dpage/pgadmin4:latest
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PG_ADMIN_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PG_ADMIN_PASSWORD}
@@ -31,7 +31,7 @@ services:
     networks:
       - inkoms-postgresql
     volumes:
-      -  pgadmin:/var/lib/pgadmin
+      - pgadmin:/var/lib/pgadmin
     user: "root:root"
 
 networks:
@@ -40,4 +40,3 @@ networks:
 
 volumes:
   pgadmin:
-
